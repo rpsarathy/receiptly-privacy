@@ -1,20 +1,20 @@
 # Privacy Policy
 
-**Receiptly.ai**
+**Receiptly.ai** (shown on your iPhone as "Receiptly")
 Last updated: 1 October 2026
 
 ---
 
 ## The short version
 
-- **Without an account**, everything stays on your iPhone. Nothing is sent
-  anywhere.
-- **With an account**, your receipts — and, unless you turn it off, their
-  photos — are backed up to your private Receiptly account so they come back
-  on a new iPhone, and you can share the ones you choose with your family.
-- Receipts are **read on your iPhone**. The one exception is *cloud reading*,
-  which you switch on separately; it sends a photo to be read and keeps
-  nothing.
+- **If you don't sign in:** your receipts and photos stay on your iPhone and
+  are never sent to us.
+- **If you sign in:** your receipts — and their photos, unless you turn that
+  off — are backed up to your private account on Google Cloud, so they come
+  back on a new iPhone, and you can share the ones you choose with your
+  family.
+- Receipts are read on your iPhone. If you turn on *cloud reading*, each
+  receipt you scan is also sent to be read in the cloud (details below).
 - No analytics, no advertising, no tracking, and nothing is sold. Your
   receipts and photos are never used to train any model.
 
@@ -37,83 +37,121 @@ private account too, so it comes back if you change or lose your iPhone.
   "Keep photos on this iPhone" — and nothing of yours is uploaded until you
   answer. You can change it at any time in Settings → Cloud Sync → Photos.
 - Photos of receipts imported from Gmail are not backed up.
-- Everything else in this section — where photos are kept, how they are
-  protected, and how to delete them — is described below.
+- Where photos are kept, how they are protected and how to delete them are
+  described below.
 
 ### 21 September 2026 — first version
 
 ---
 
-## Using Receiptly without an account
+## Using Receiptly without signing in
 
-You can use every part of Receiptly that works on one iPhone — scanning,
-reading, search, insights and export — without signing in. In that case:
+Scanning, reading, search, insights and export all work without an account.
+In that case:
 
-- Receipt details are held in an encrypted database on your iPhone, and
-  receipt photos in the app's private storage, readable only while your
-  iPhone is unlocked. Neither is included in an iCloud or computer backup.
-- Nothing about your receipts is sent to us or anyone else.
+- Receipt details are kept in an encrypted database on your iPhone, and
+  receipt photos in the app's private storage, protected by your iPhone's
+  passcode. Neither is included in an iCloud or computer backup.
+- Receiptly sends nothing about your receipts to us or to anyone else.
 - Deleting the app deletes all of it.
 
 ## If you sign in
 
-You can sign in with Google or with an email address and password (and, where
-available, with Apple). Sign-in is handled by Google Firebase Authentication.
-We receive a unique account identifier and, from the provider, your name,
-email address and profile picture, which are used only to show who you are
-to the family members you choose to share with.
+You can sign in with Google or with an email address and password. Sign-in
+is handled by Google Firebase Authentication.
+
+### Your account
+
+We keep a unique account ID, your email address, the name and profile
+picture your sign-in provider gives us, which sign-in method you used, and
+when you last signed in. You can edit your name and add an optional phone
+number. Your email address and phone number are used only for your account
+and are never shown to anyone else. Family members see your name and
+profile picture.
 
 ### What is backed up to your account
 
-- **Receipt details** — shop, date, total, tax, currency, receipt number,
-  items, prices, quantities, categories, product and store codes, and the
-  receipt's own barcode.
-- **Your corrections**, so reading keeps improving for your account.
+- **Receipt details** — shop, date, total, subtotal, tax, currency, receipt
+  number, items, prices, quantities, categories, product and store codes,
+  the text of each item line as it was read, and where the receipt came
+  from (camera, photo library or Gmail). The receipt's own barcode stays on
+  your iPhone.
+- **Your edits** — the details as you corrected them, and a note that you
+  edited them, so another device does not overwrite your change.
 - **Receipt photos**, if photo backup is on (see "What's changed"). A photo
   is reduced to at most 2000 pixels on its longest side before it is sent,
   and location and camera details are removed.
 
+### Search
+
+When you search while signed in, what you type is sent to our server to
+find matching receipts in your account. It is used only to answer that
+search and is not kept.
+
 ### Where it is kept, and how it is protected
 
-Your account data is kept on Google Cloud in the United States (Cloud SQL
-for receipt details, Cloud Storage for photos), in a private area that only
-your account can reach. It is encrypted in transit and in storage. A photo
-can only be fetched through a signed link that expires after five minutes.
-This is not end-to-end encryption: our server can read your receipt details
-in order to back them up, search them and restore them to you.
+Your account data is kept by Google Cloud in the United States (Cloud SQL
+for receipt details, Cloud Storage for photos), private to your account —
+and, for receipts you share, to your family. It is encrypted in transit and
+in storage. A photo can only be fetched through a signed link that expires
+after five minutes. This is not end-to-end encryption: our server can read
+your receipt details in order to back them up, search them and restore them
+to you.
 
 ### What it is used for
 
 Only to back up, restore and search your own receipts, and — for receipts
-you share — to show them to your family. Receipt details and photos are not
-read by people, not analysed for any other purpose, not sold, not used for
-advertising, and not used to train any model.
+you share — to show them to your family. We do not look at your receipts
+unless you ask us to help with a problem. Receipt details and photos are not
+sold, not used for advertising, and not used to train any model.
 
 ### Sharing with your family
 
-If you create or join a family, you can share individual receipts with it
-(or choose to share everything). Family members see the receipts you share —
-including the photo — and your name as the person who added them. They
-cannot change your receipts. Receipts you do not share stay private to you.
-You can stop sharing a receipt at any time.
+If you create or join a family, you can share individual receipts with it.
+With "Share everything", new receipts are shared automatically, except those
+imported from Gmail. Family members see the receipts you share — including
+the photo — with your name and profile picture. They cannot change your
+receipts. Receipts you do not share stay private to you. You can stop
+sharing a receipt at any time.
 
 ### Gmail import (optional)
 
 If you connect Gmail, Receiptly asks Google for **read-only** access to your
-email. Emails are fetched to your iPhone and read there; only the receipts
-you keep are backed up to your account, like any other receipt. Email
-content is never sent to our server. You can disconnect Gmail at any time in
-Settings, and you can also remove Receiptly's access in your Google Account.
+email. Emails are fetched to your iPhone and read there. The emails
+themselves are never sent to our server; the receipts you keep are backed up
+like any other receipt, with the details read from them. You can disconnect
+Gmail at any time in Settings, and you can also remove Receiptly's access in
+your Google Account.
 
 ### Cloud reading (optional)
 
-If you turn on cloud reading, after its own consent screen, a receipt that
-is hard to read on the iPhone can be sent to be read by a model (Qwen3-VL)
-hosted by DeepInfra in the United States. One reduced, metadata-free photo
-and the text the iPhone already read are sent; DeepInfra keeps nothing and
-does not train on it, and our server stores neither — only a count of how
-many receipts were read. Your iPhone's own reading is always used if cloud
-reading is unavailable.
+Cloud reading is off until you turn it on, after its own consent screen.
+While it is on, each receipt you scan is also sent to be read by a model
+(Qwen3-VL) hosted by DeepInfra in the United States. We send one reduced
+photo, with location and camera details removed, and the text your iPhone
+already read. DeepInfra does not keep it or train on it. Our server does not
+store the photo or the text; it keeps the reading it returned for up to
+about a day, so that a retried request is not read twice, and a daily count
+of how many receipts you had read. Your iPhone's own reading is always used
+if cloud reading is unavailable.
+
+## Service providers
+
+- **Google Cloud** (Cloud Run, Cloud SQL, Cloud Storage; United States) —
+  runs our server and stores your account data.
+- **Google Firebase Authentication** and **Google Sign-In** — sign-in.
+- **Gmail API** — only if you connect Gmail, and only from your iPhone.
+- **DeepInfra** (United States) — only if you turn on cloud reading.
+
+Your data is processed in the United States.
+
+## Server logs
+
+When the app talks to our server, Google Cloud records technical request
+information — such as your IP address, the time, and which part of the
+service was used — to keep the service running and secure. Our own logs
+leave out receipt contents, email addresses and sign-in tokens. Logs are
+kept for up to 30 days.
 
 ## Permissions the app asks for
 
@@ -127,7 +165,9 @@ optional app lock; iOS tells the app only whether the check succeeded.
 - No advertising identifier, and no tracking across other apps or websites.
 - No selling or sharing of personal information.
 
-## Deleting your data
+## How long data is kept, and deleting it
+
+Account data is kept until you delete it or delete your account.
 
 - **A receipt:** deleting it in the app deletes it from your account too,
   including its backed-up photo.
@@ -135,7 +175,11 @@ optional app lock; iOS tells the app only whether the check succeeded.
   them. Photos of receipts you share with your family stay, so they can
   still see them, until you stop sharing those receipts.
 - **Your account:** Settings → Cloud Sync → "Delete account and all data"
-  deletes your account, every receipt and every photo from our servers.
+  deletes your account, receipts, photos and profile from our servers, and
+  the receipts on this iPhone. Copies in our encrypted database backups are
+  overwritten within 7 days, and server logs within 30 days.
+- **Without the app:** email us from the address you signed in with and we
+  will delete your account and data within 30 days.
 - **Signing out** never deletes anything; your backup is there when you sign
   in again.
 
@@ -150,7 +194,8 @@ Depending on where you live, laws such as the GDPR and the CCPA give you the
 right to see, correct, delete or export personal information held about you,
 and to ask that it not be sold. You can edit and delete receipts in the app,
 export them as CSV or PDF, and delete your account from Settings. For
-anything else, contact us below. We do not sell personal information.
+anything else, email us and we will reply within 30 days. We do not sell
+personal information.
 
 ## Changes to this policy
 
@@ -161,7 +206,7 @@ you the choice before anything new of yours is sent.
 
 ## Contact
 
-Questions about this policy, or about how the app handles your data:
+Questions about this policy, or requests about your data:
 
 **parthasarathy.ramaraj@gmail.com**
 
