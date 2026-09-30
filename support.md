@@ -2,16 +2,33 @@
 title: Support
 ---
 
-# Receiptly.ai — Support
+# Receiptly.ai
 
-## Contact
+**Scan receipts. Find anything.**
 
-Questions, problems, or feedback:
+Receiptly.ai is an iPhone app that turns paper and emailed receipts into
+something you can search. Photograph a receipt and it reads the shop, date,
+items and total on your iPhone; you check it, fix anything it misread, and
+save. Later, search for the thing you bought — "milk", a shop, an amount, a
+month — and open the original photo whenever you need the real paper.
 
-**parthasarathy.ramaraj@gmail.com**
+- Use it without an account, and everything stays on your iPhone.
+- Sign in with Apple, Google or email to back up your receipts (and their
+  photos, unless you turn that off) and get them back on a new iPhone.
+- Share the receipts you choose with your family.
+- Optionally import receipts from Gmail — read on your iPhone, with
+  read-only access you can disconnect at any time.
 
-I read every message. Please include your iPhone model and iOS version if
-you are reporting a problem — it is usually the first thing I need to know.
+[Privacy Policy](./) · Contact: **parthasarathy.ramaraj@gmail.com**
+
+---
+
+## Support
+
+Questions, problems, or feedback: **parthasarathy.ramaraj@gmail.com**
+
+I read every message. If you are reporting a problem, please include your
+iPhone model and iOS version.
 
 ---
 
@@ -19,48 +36,62 @@ you are reporting a problem — it is usually the first thing I need to know.
 
 ### Where are my receipts stored?
 
-On your iPhone. Receipt details are held in an encrypted database, and
-receipt photographs in the app's private storage. Nothing is sent to a
-server, and neither is included in an iCloud or computer backup. See the
-[privacy policy](./) for the full description.
+**Without an account:** only on your iPhone, in an encrypted database, with
+photos in the app's private storage. Nothing is sent to us.
 
-### Will my receipts survive a new iPhone?
+**With an account:** on your iPhone, and backed up to your private account on
+Google Cloud in the United States — receipt details, and their photos unless
+you turn photo backup off (Settings → Cloud Sync → Photos). See the
+[privacy policy](./) for exactly what is kept and why.
 
-**No — not in this version.** Because everything is stored only on your
-device and is deliberately excluded from backups, receipts do not transfer to
-a new phone. Export what you want to keep before you switch.
+### Will my receipts come back on a new iPhone?
 
-Optional backup is planned for a future version, and it will be a choice you
-make, not a default.
+Yes, if you sign in. Sign in on the new iPhone with the same account and your
+receipts come back; photos from the last 12 months download over Wi-Fi, and
+older ones when you open them (or all at once from Settings → Cloud Sync →
+Photos → "Download all photos").
+
+Without an account, receipts stay on the iPhone they were saved on — export
+them first (Settings → Export) if you switch phones.
+
+### How do I share receipts with my family?
+
+Open the Family tab, create a family, and invite people with a code. Then
+share individual receipts, or choose to share everything. Family members see
+the receipts you share, with your name on them; they cannot change them.
+
+### How does Gmail import work?
+
+Settings → Gmail. Receiptly asks Google for read-only access, finds receipt
+emails, reads them on your iPhone, and shows each one for you to review
+before it is saved. Emails are never sent to our server. Disconnect at any
+time in Settings, or remove access in your Google Account.
 
 ### How do I get my receipts out?
 
-Settings → Export. You can export as CSV, which opens in any spreadsheet, or
-as a PDF. Both are created on your iPhone and handed to whatever you choose —
-email, Files, a messaging app.
+Settings → Export — CSV for a spreadsheet, or PDF. Both are made on your
+iPhone.
 
 ### The app read something wrong. What do I do?
 
-Correct it. Open the receipt, tap Edit, and fix the field. Your corrections
-are kept, and the app uses them to read that shop's receipts better next
-time.
+Tap "See photo" to check the original, then Edit and fix the field. Receiptly
+remembers store-name and category corrections for that store's next receipts.
 
-### Why did it not find the item I searched for?
+### How do I delete my data?
 
-Search looks at shop names, dates, amounts, item descriptions and item codes.
-If an item was not read off the receipt in the first place, it cannot be
-found — open the receipt, check the item list, and add or correct the line.
+Delete a receipt in the app and it is deleted from your account too. To delete
+everything: Settings → Cloud Sync → "Delete account and all data". You can
+also email us and we will delete your account within 30 days.
 
 ### How do I turn on the app lock?
 
-Settings → App Lock. It uses Face ID or Touch ID, falling back to your device
-passcode. If your iPhone has no passcode set, the lock cannot be enforced and
-the app will tell you so rather than quietly switching itself off.
+Settings → App Lock. It uses Face ID or Touch ID, falling back to your
+passcode.
 
-### Does the app use my data for anything?
+### Does the app use my data for anything else?
 
-No. There is no account, no analytics, no crash reporting, no advertising and
-no tracking. Nothing about your receipts leaves your iPhone.
+No analytics, no advertising, no tracking, and nothing is sold. Your receipts
+and photos are never used to train any model.
 
 ---
 
