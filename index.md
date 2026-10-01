@@ -120,11 +120,48 @@ sharing a receipt at any time.
 ### Gmail import (optional)
 
 If you connect Gmail, Receiptly asks Google for **read-only** access to your
-email. Emails are fetched to your iPhone and read there. The emails
-themselves are never sent to our server; the receipts you keep are backed up
-like any other receipt, with the details read from them. You can disconnect
-Gmail at any time in Settings, and you can also remove Receiptly's access in
-your Google Account.
+email (`gmail.readonly`). It cannot send, delete, change or mark your emails
+as read.
+
+- **What it reads:** it looks at senders and subjects to find likely
+  receipts, and opens only those messages and their receipt attachments.
+  Promotions, newsletters, delivery updates and personal mail are skipped.
+  Links and images inside emails are never loaded.
+- **Where it is read:** on your iPhone. Emails are never sent to our server
+  or to anyone else, and are never sent for cloud reading.
+- **What is kept:** the receipts it finds — the same receipt details as for
+  a scanned receipt (shop, date, amounts, items) — are saved in Receiptly
+  and backed up to your account. Receipts it is unsure about wait for you to
+  check. To avoid reading the same email twice, your iPhone keeps a record
+  of which messages it has checked (message ID, sender's domain and date);
+  this record stays on your iPhone. Email subjects, senders and message
+  contents are not sent to our server, and pictures from emails are not
+  backed up.
+- **Not shared:** receipts imported from Gmail are never shared with your
+  family automatically, even with "Share everything" on.
+- **Stopping:** disconnect Gmail at any time in Settings → Gmail, and choose
+  whether imported receipts stay or are deleted. You can also remove
+  Receiptly's access at
+  [myaccount.google.com/permissions](https://myaccount.google.com/permissions).
+
+#### Google API Services: Limited Use
+
+Receiptly's use and transfer of information received from Google APIs to
+any other app will adhere to the
+[Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy),
+including the Limited Use requirements. In particular, data from your Gmail:
+
+- is used only to find and import your receipts, a feature you can see and
+  control in the app;
+- is not used for advertising, and is not sold;
+- is not used to develop, improve or train any AI or machine-learning
+  model;
+- is not transferred to anyone else, except as needed to provide the
+  feature (backing up the receipts you import to your own account), to
+  comply with the law, or with your consent (sharing a receipt with your
+  family);
+- is not read by any person, unless you ask us to help with a problem and
+  agree to it, it is needed for security, or the law requires it.
 
 ### Cloud reading (optional)
 
@@ -144,7 +181,8 @@ if cloud reading is unavailable.
   runs our server and stores your account data.
 - **Google Firebase Authentication**, **Sign in with Apple** and **Google
   Sign-In** — sign-in.
-- **Gmail API** — only if you connect Gmail, and only from your iPhone.
+- **Gmail API** (Google) — only if you connect Gmail, and only from your
+  iPhone.
 - **DeepInfra** (United States) — only if you turn on cloud reading.
 
 Your data is processed in the United States.

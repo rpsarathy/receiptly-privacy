@@ -62,10 +62,13 @@ the receipts you share, with your name on them; they cannot change them.
 
 ### How does Gmail import work?
 
-Settings → Gmail. Receiptly asks Google for read-only access, finds receipt
-emails, reads them on your iPhone, and shows each one for you to review
-before it is saved. Emails are never sent to our server. Disconnect at any
-time in Settings, or remove access in your Google Account.
+Settings → Gmail (needs an account). Receiptly asks Google for read-only
+access, finds receipt and order-confirmation emails, and reads them on your
+iPhone. Receipts it is confident about are added to your list; ones it is
+unsure about — unclear amount, possibly unpaid — wait for you to check.
+Emails are never sent to our server, and Receiptly cannot send, delete or
+change your email. Disconnect at any time in Settings → Gmail, or remove
+access in your Google Account.
 
 ### How do I get my receipts out?
 
