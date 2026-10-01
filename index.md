@@ -57,8 +57,11 @@ In that case:
 
 ## If you sign in
 
-You can sign in with Google or with an email address and password. Sign-in
-is handled by Google Firebase Authentication.
+You can sign in with Apple, with Google, or with an email address and
+password. Sign-in is handled by Google Firebase Authentication. If you sign
+in with Apple and choose "Hide My Email", we receive only Apple's relay
+address, never your real one. Deleting your account also revokes
+Receiptly's access to your Apple ID.
 
 ### Your account
 
@@ -139,7 +142,8 @@ if cloud reading is unavailable.
 
 - **Google Cloud** (Cloud Run, Cloud SQL, Cloud Storage; United States) —
   runs our server and stores your account data.
-- **Google Firebase Authentication** and **Google Sign-In** — sign-in.
+- **Google Firebase Authentication**, **Sign in with Apple** and **Google
+  Sign-In** — sign-in.
 - **Gmail API** — only if you connect Gmail, and only from your iPhone.
 - **DeepInfra** (United States) — only if you turn on cloud reading.
 
