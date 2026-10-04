@@ -1,7 +1,7 @@
 # Privacy Policy
 
 **Receiptly.ai** (shown on your iPhone as "Receiptly")
-Last updated: 1 October 2026
+Last updated: 4 October 2026
 
 ---
 
@@ -15,12 +15,34 @@ Last updated: 1 October 2026
   family.
 - Receipts are read on your iPhone. If you turn on *cloud reading*, each
   receipt you scan is also sent to be read in the cloud (details below).
-- No analytics, no advertising, no tracking, and nothing is sold. Your
-  receipts and photos are never used to train any model.
+- No advertising, no tracking, no third-party analytics, and nothing is
+  sold. Your receipts and photos are never used to train any model — unless
+  you turn on *Help improve receipt reading*, in which case the receipts you
+  add from then on are shared with us for that purpose only (details below).
 
 ---
 
 ## What's changed
+
+### 4 October 2026 — an optional way to help improve reading
+
+A new setting, *Help improve receipt reading*, off unless you turn it on,
+shares the receipts you scan with us so reading can be tested and improved
+(see "Helping improve receipt reading"). The short version's promise that
+your receipts are never used to train any model now carries that one
+exception, which you choose.
+
+### 4 October 2026 — cloud reading uses Gemini first
+
+If you turn on cloud reading, receipts are now read by **Gemini**, run by
+Google Cloud in the United States, and only when Gemini cannot answer by
+**Qwen** at DeepInfra, as before. Nothing else about cloud reading changed:
+it stays off until you turn it on, one reduced photo and its text are sent,
+neither company trains on it, and our server keeps neither. The app asks
+for your permission again before sending anything to Gemini if you had
+turned cloud reading on earlier. Our server's logs now also note, for each
+cloud reading, how long it took and how much was read, as counts only; see
+"Server logs".
 
 ### 1 October 2026 — receipt photos can be backed up
 
@@ -166,24 +188,53 @@ including the Limited Use requirements. In particular, data from your Gmail:
 ### Cloud reading (optional)
 
 Cloud reading is off until you turn it on, after its own consent screen.
-While it is on, each receipt you scan is also sent to be read by a model
-(Qwen3-VL) hosted by DeepInfra in the United States. We send one reduced
-photo, with location and camera details removed, and the text your iPhone
-already read. DeepInfra does not keep it or train on it. Our server does not
-store the photo or the text; it keeps the reading it returned for up to
-about a day, so that a retried request is not read twice, and a daily count
-of how many receipts you had read. Your iPhone's own reading is always used
-if cloud reading is unavailable.
+While it is on, each receipt you scan is also sent to be read by an AI
+reader: **Gemini**, run by Google Cloud (Vertex AI) in the United States.
+If Gemini cannot answer, the same photo and text are sent instead to
+**Qwen**, run by DeepInfra in the United States. We send one reduced photo,
+with location and camera details removed, and the text your iPhone already
+read. Under their terms, neither Google Cloud nor DeepInfra uses it to train
+their models. Our server does not store the photo or the text; it keeps
+the reading it returned for up to about a day, so that a retried request is
+not read twice, and a daily count of how many receipts you had read (up to
+100 a day). Your iPhone's own reading is always used if cloud reading is
+unavailable.
+
+If you turned cloud reading on before 4 October 2026, when the reader was
+Qwen only, the app asks for your permission again before sending anything
+to Gemini.
+
+### Helping improve receipt reading (optional)
+
+Off unless you turn it on, in Settings, in the app. While it is on, each
+receipt you scan, import from your photos or enter by hand — not Gmail
+receipts — is also shared with us: the reduced photo, everything printed on
+it as your iPhone read it, what each reader returned, what you saved, which
+fields you corrected, which reader was in use, your iPhone model, iOS
+version, app version and the country or region your iPhone is set to.
+Nothing else about you: not your name, email or phone number — though
+anything printed on the receipt itself, such as a loyalty number, is part of
+the text. It is kept on our server in the United States, under your account,
+for up to a year, and used only to test and improve how Receiptly reads
+receipts, which can include training our reading on it. It is never sold,
+never shared with anyone else, and never used for advertising. Sharing
+happens after you save, in the background; it never slows the app, and a
+share that fails is simply not sent. Up to 50 receipts a day. Turning the
+setting off stops sharing at once, and "Delete receipts you shared" in
+Settings removes everything you shared; deleting your account removes it
+too.
 
 ## Service providers
 
-- **Google Cloud** (Cloud Run, Cloud SQL, Cloud Storage; United States) —
-  runs our server and stores your account data.
+- **Google Cloud** (Cloud Run, Cloud SQL, Cloud Storage, Vertex AI; United
+  States) — runs our server, stores your account data, and, only if you
+  turn on cloud reading, reads your receipts with Gemini.
 - **Google Firebase Authentication**, **Sign in with Apple** and **Google
   Sign-In** — sign-in.
 - **Gmail API** (Google) — only if you connect Gmail, and only from your
   iPhone.
-- **DeepInfra** (United States) — only if you turn on cloud reading.
+- **DeepInfra** (United States) — only if you turn on cloud reading, and
+  only when Gemini cannot answer.
 
 Your data is processed in the United States.
 
@@ -192,7 +243,12 @@ Your data is processed in the United States.
 When the app talks to our server, Google Cloud records technical request
 information — such as your IP address, the time, and which part of the
 service was used — to keep the service running and secure. Our own logs
-leave out receipt contents, email addresses and sign-in tokens. Logs are
+leave out receipt contents, email addresses and sign-in tokens. For each
+cloud reading they record how long it took, which reader answered, the
+size of the photo, how many lines and items were read and whether the
+amounts added up, and the country or region your iPhone is set to; when you
+share a receipt to improve reading, its size and your region — never the
+photo, the text, a store, an amount or an item. Logs are
 kept for up to 30 days.
 
 ## Permissions the app asks for
