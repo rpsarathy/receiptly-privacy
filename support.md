@@ -56,9 +56,17 @@ them first (Settings → Export) if you switch phones.
 
 ### How do I share receipts with my family?
 
-Open the Family tab, create a family, and invite people with a code. Then
+Open the Family tab, create a family, and invite people with a link (a code is included for when the link doesn't open the app). Then
 share individual receipts, or choose to share everything. Family members see
 the receipts you share, with your name on them; they cannot change them.
+
+### Family invitations
+
+To join: tap the link in the invitation message. On an iPhone that has Receiptly it opens the app on the Join screen; sign in, check the family shown is the right one, then tap Join family.
+
+If the link doesn't open the app: open Receiptly, go to the Family tab, tap Join family, and enter the code from the message (or paste the whole message — the app picks out the code).
+
+If the invitation says it is unavailable or expired, ask the organizer to send you a new one.
 
 ### How does Gmail import work?
 
