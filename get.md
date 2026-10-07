@@ -7,9 +7,15 @@ permalink: /get/
 
 Receiptly is free, with no subscription.
 
-<!-- OWNER: fill in the links below. Do not publish made-up URLs. -->
+<p>
+  <a href="https://apps.apple.com/app/id6814588795" style="display:inline-block;padding:12px 20px;background:#0f5c4d;color:#fff;border-radius:10px;text-decoration:none;font-weight:600;">Download on the App Store</a>
+</p>
 
-- App Store: *link to be added when Receiptly is public*
-- TestFlight (beta testers): *invitation link to be added by the organizer*
+If the App Store page says the app isn't available yet, the release is
+still in review — check back soon. Beta testers get Receiptly through the
+TestFlight invitation the organizer sent them, not from the App Store.
+
+Once installed, go back to the invitation message and tap its link, or
+open the app → Family → Join family and enter the code.
 
 [Privacy Policy](/) · [Support](/support)
