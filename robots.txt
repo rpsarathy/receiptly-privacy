@@ -1,0 +1,5 @@
+User-agent: *
+# Family invitation links carry a private code; nothing there for search.
+Disallow: /join/
+
+Sitemap: https://receiptly.rpsarathy.com/sitemap.xml
